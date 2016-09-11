@@ -226,7 +226,7 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 header {
-    background-image: url('../imgs/header-bg.jpg');
+    background-image: url('//s3-us-west-2.amazonaws.com/mysite-bucket/imgs/header-bg.jpg');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -456,7 +456,7 @@ section h3.section-subheading {
     margin-top: 0;
     color: inherit;
 }
-.timeline .timeline-heading h4.subheading {
+.timeline .timeline-heading h4.subheading,.timeline-body h4,.timeline-body h3,.timeline-body h2 {
     text-transform: none;
 }
 .timeline .timeline-body > p,
@@ -555,7 +555,7 @@ aside.clients img {
 }
 section#contact {
     background-color: #222222;
-    background-image: url('../imgs/map-image.png');
+    background-image: url('//s3-us-west-2.amazonaws.com/mysite-bucket/imgs/map-image.png');
     background-position: center;
     background-repeat: no-repeat;
 }

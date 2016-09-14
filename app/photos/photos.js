@@ -1,14 +1,15 @@
 'use strict';
 
-angular.module('myApp.blog', ['ngRoute'])
+angular.module('myApp.photos', ['bootstrapLightbox', 'ngRoute'])
 
     .config(['$routeProvider', function($routeProvider) {
-      $routeProvider.when('/blog', {
-        templateUrl: 'blog/blog.html',
-        controller: 'BlogCtrl'
-      });
+        $routeProvider.when('/photos', {
+            templateUrl: 'photos/photos.html',
+            controller: 'PhotosCtrl'
+        });
     }])
+    .controller('PhotosCtrl', function($scope,Lightbox) {
 
-    .controller('BlogCtrl', function($scope,$http) {
+
 
     });

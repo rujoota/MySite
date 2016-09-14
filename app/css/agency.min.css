@@ -227,7 +227,8 @@ fieldset[disabled] .btn-xl.active {
 }
 header {
     /*background-image: url('//s3-us-west-2.amazonaws.com/mysite-bucket/imgs/mainBg.jpg');*/
-    background-image: url('imgs/mainBg.JPG');
+    /*background-image: url('http://d1bi6tpavkj42f.cloudfront.net/mainBg.jpg');*/
+    background-image: url("../imgs/mainBg.jpg");
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;

@@ -226,7 +226,8 @@ fieldset[disabled] .btn-xl.active {
     }
 }
 header {
-    background-image: url('//s3-us-west-2.amazonaws.com/mysite-bucket/imgs/header-bg.jpg');
+    /*background-image: url('//s3-us-west-2.amazonaws.com/mysite-bucket/imgs/header-bg.jpg');*/
+    background-image: url('../imgs/mainBg.JPG');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -780,6 +781,7 @@ body {
     margin: 0;
     font-weight: 300;
     margin-bottom: 10px;
+    text-transform: none;
 }
 .post-preview > .post-meta {
     color: #777777;
@@ -798,7 +800,7 @@ body {
 }
 @media only screen and (min-width: 768px) {
     .post-preview > a > .post-title {
-        font-size: 36px;
+        font-size: 30px;
     }
 }
 hr.small {
@@ -836,4 +838,9 @@ hr.small {
 
 .gallery5 img {
     width: 120px;
+}
+.view-more-btn
+{
+    background-color: #fec503!important;
+    color:white!important;
 }

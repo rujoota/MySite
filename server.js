@@ -30,7 +30,7 @@ if ('development' === app.get('env')) {
 var ProjectObj=require('./data/projects.js');
 
 app.get('/projects123',function(req, res){
-    DynamoStore.getAllItems("Projects",function (err,data) {
+    /*DynamoStore.getAllItems("Projects",function (err,data) {
         if (err) {
             console.error("Unable to scan the table. Error JSON:", JSON.stringify(err, null, 2));
         } else {
@@ -38,7 +38,39 @@ app.get('/projects123',function(req, res){
             console.log("Scan succeeded.Data returned:"+JSON.stringify(data.Items));
             return res.json(data.Items);
         }
-    });
+    });*/
+    return res.json([
+    {
+        "img": "../imgs/projects/os.jpg",
+        "name": "System programming",
+        "order": 3,
+        "desc": "Operating system and network programming in C"
+    },
+    {
+        "img": "../imgs/projects/website.jpg",
+        "name": "Web Development",
+        "order": 2,
+        "desc": "5 years of experience as full-stack web developer"
+    },
+    {
+        "name": "Game development",
+        "order": 4,
+        "img": "../imgs/projects/game.jpg",
+        "desc": "Desktop and online multiplayer games with Game Server"
+    },
+    {
+        "img": "../imgs/projects/mobile.jpg",
+        "name": "Mobile App Development",
+        "order": 1,
+        "desc": "Development experience in both Android and iOS(swift)"
+    },
+    {
+        "img": "../imgs/projects/server.jpg",
+        "name": "Server development",
+        "order": 5,
+        "desc": "Worked on creating web-server and game-server"
+    }
+    ]);
 });
 http.createServer(app).listen(app.get('port'), function () {
     console.log('myApp server listening on port ' + app.get('port'));

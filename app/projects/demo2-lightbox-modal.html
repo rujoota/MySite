@@ -3,11 +3,10 @@
      ng-swipe-right="Lightbox.prevImage()">
     <div class="row valign">
         <div class="col-sm-2">
-
             <a class="btn btn-xs btn-default" ng-click="Lightbox.prevImage()"><img src="../imgs/prev_icon.png" class="img-centered img-responsive"></a>
         </div>
         <div class="col-sm-8">
-            <div style="margin: 1em 0 0;">
+            <div style="margin: 1em 0 0;" class="project-center">
                 <!--<div ng-bind-html="Lightbox.imageCaption"></div>-->
                 <ng-include src="Lightbox.imageCaption"></ng-include>
             </div>

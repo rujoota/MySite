@@ -20,4 +20,12 @@ angular.module('myApp.home', ['ngRoute'])
     })
     .controller('HomeCtrl', function($scope,$http) {
 
+    })
+    .controller('ProjectCtrl', function($scope,$http) {
+
+
+        $http.get( "projects123").success(function( data ) {
+            $scope.projects=data;
+        });
+
     });

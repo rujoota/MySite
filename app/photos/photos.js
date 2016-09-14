@@ -10,6 +10,4 @@ angular.module('myApp.photos', ['bootstrapLightbox', 'ngRoute'])
     }])
     .controller('PhotosCtrl', function($scope,Lightbox) {
 
-
-
     });

@@ -50,7 +50,7 @@ angular.module('myApp', [
     .controller('BlogCtrl', function($scope,$http) {
 
     })
-    .controller('PhotosCtrl', function($scope,Lightbox) {
+    .controller('PhotosCtrl', function($scope) {
 
     });
 /*config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {

@@ -20,7 +20,7 @@ angular.module('myApp.projects', ['ui.router'])
 .controller('ProjectCtrl', function($scope,$http) {
 
 
-      $http.get( "projects123").success(function( data ) {
+      $http.get( "allProjects").success(function( data ) {
         $scope.projects=data;
       });
 

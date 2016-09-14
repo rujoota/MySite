@@ -1,0 +1,51 @@
+<img class="img-responsive img-centered" src="../imgs/projects/proj_attendance.png" alt="">
+<p>
+    This app is built in Android which lets facilitator take attendance for students or
+    attendees. Both facilitator and attendees will install this app. Facilitator can set up
+    lectures according to their timetable in their app. To make the initial setup easy,
+    facilitator can directly import file from their mobile.(Here is the
+    format:https://github.com/rujoota/CSC780_Attendance/blob/master/students.txt)
+    Facilitator can scan NFC tag first which allows some data relavant to current lecture
+    transferred to the tag and then students can fill attendance by just scanning these tags
+    with their mobile. Facilitator can view and export the reports about the students.
+    Students can only view their report.
+<p>
+    MySQL database for this app is hosted at Amazone Cloud. Data retrieval is done by simple
+    php pages. Basic database schema and requirements are
+    <a href="https://github.com/rujoota/Attendance/blob/master/Attendance%20App.docx" target="_blank">here.</a>
+    View initial screen design
+    <a href="https://github.com/rujoota/CSC780_Attendance/blob/master/CSC780_Attendance%20App.pdf" target="_blank">here</a>
+    Some features of Android which this app uses
+<ul>
+    <li>Recycler view</li>
+    <li>Remotely hosted API utilization for connecting to database on cloud</li>
+    <li>Customized color-coded calendar</li>
+    <li>File import-export from phone</li>
+    <li>Common branding and coloring</li>
+    <li>Checkbox drawable state selectors</li>
+    <li>NFC communication with custom mime-type</li>
+</ul>
+
+If you want to try this app, you need to do followin data setup:
+<ul>
+    <li>Create an account as facilitator and login</li>
+    <li>Have attendees install this app and let them create their accounts.</li>
+    <li>Add few courses</li>
+    <li>Upload attendees in those courses(You need to have file manager for this. <a
+            href="https://github.com/rujoota/CSC780_Attendance/blob/master/students.txt"
+            target="_blank">Sample file</a></li>
+    <li>Add a new schedule from My Schedule</li>
+    <li>Try taking attendance from 'Start taking attendance now' and scan NFC</li>
+    <li>Attendees should scan the same NFC tag - they don't need to open the app(they should
+        have logged in before)
+    </li>
+    <li>After all attendees are done, facilitator hits refresh button and then saves the
+        attendance.
+    </li>
+    <li>Facilitator can also view past classes in which attendance is not filled by going
+        through My Attendance Calendar and fill that attendance as well.
+    </li>
+    <li>Facilitator can also view and export attendance report for all attendees for all
+        courses, attendees can only view their report.
+    </li>
+</ul>

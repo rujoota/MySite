@@ -1,0 +1,32 @@
+<div class="modal-body"
+     ng-swipe-left="Lightbox.nextImage()"
+     ng-swipe-right="Lightbox.prevImage()">
+    <div class="row valign">
+        <div class="col-sm-2">
+
+            <a class="btn btn-xs btn-default" ng-click="Lightbox.prevImage()"><img src="../imgs/prev_icon.png" class="img-centered img-responsive"></a>
+        </div>
+        <div class="col-sm-8">
+            <div style="margin: 1em 0 0;">
+                <!--<div ng-bind-html="Lightbox.imageCaption"></div>-->
+                <ng-include src="Lightbox.imageCaption"></ng-include>
+            </div>
+        </div>
+        <div class="col-sm-2">
+
+            <a class="btn btn-xs btn-default pull-right" ng-click="Lightbox.nextImage()">
+                <img src="../imgs/next_icon.png" class="img-centered img-responsive">
+            </a>
+        </div>
+    </div>
+
+
+    <!-- image -->
+    <!--<div class="lightbox-image-container">
+        <img lightbox-src="{{Lightbox.imageUrl}}">
+    </div>-->
+
+    <!-- caption -->
+
+
+</div>

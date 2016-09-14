@@ -702,6 +702,16 @@ ul.social-buttons li a:active {
     right: 25px;
     cursor: pointer;
 }
+.portfolio-modal .next-modal {
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    background-color: transparent;
+    top: 175px;
+    right: 175px;
+    cursor: pointer;
+    vertical-align: middle;
+}
 .portfolio-modal .close-modal:hover {
     opacity: 0.3;
 }

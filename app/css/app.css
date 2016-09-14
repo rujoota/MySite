@@ -36,3 +36,25 @@ body {
   padding-left:0;
   padding-right: 0;
 }
+
+.valign {
+  font-size: 0;
+}
+
+.valign > [class*="col"] {
+  display: inline-block;
+  float: none;
+  font-size: 14px;
+  font-size: 1rem;
+  vertical-align: middle;
+}
+
+.carousel-control.left,.carousel-control.right{
+  background-image:none;
+  margin-top:10%;
+  width:5%;
+}
+
+/*.modal-dialog{
+  width: 700px!important;
+}*/

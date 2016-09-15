@@ -10,7 +10,7 @@ angular.module('myApp', [
   'myApp.version'
 ]).
     config(function($stateProvider,$urlRouterProvider){
-      //$urlRouterProvider.otherwise("/");
+      //$urlRouterProvider.otherwise("");
       $stateProvider.state("index", {
             url: "",
             views: {
@@ -51,7 +51,10 @@ angular.module('myApp', [
 
     })
     .controller('PhotosCtrl', function($scope) {
-
+        $scope.number = 20;
+        $scope.getNumber = function(num) {
+            return new Array(num);
+        }
     });
 /*config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   //$locationProvider.hashPrefix('!');

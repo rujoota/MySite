@@ -1,13 +1,60 @@
-<section id="photos" class="bg-light-gray">
+<style>
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+        width: 100%;
+        margin: auto;
+    }
+</style>
+<section id="photos" class="bg-light-gray" ng-controller="PhotosCtrl">
     <div class="row">
         <div class="col-lg-12 text-center">
             <h2 class="section-heading">Flora Photography</h2>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col-sm-12" style="text-align:center">
-            <a data-flickr-embed="true" data-header="true" data-footer="true" data-context="true"  href="https://www.flickr.com/photos/rujoota/23180797012/in/photostream/" title="IMG_20150420_115119"><img src="https://c5.staticflickr.com/6/5689/23180797012_01860be885_b.jpg" width="958" height="1024" alt="IMG_20150420_115119"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+    <!--<div class="row">
+        <div class="col-sm-12 img-centered img-responsive text-center" >
+            <a data-flickr-embed="true" data-header="true" data-footer="true" data-context="true"
+               href="https://www.flickr.com/photos/rujoota/23180797012/in/photostream/" title="IMG_20150420_115119">
+                <img src="https://c5.staticflickr.com/6/5689/23180797012_01860be885_b.jpg"
+                     alt="IMG_20150420_115119" ></a>
+            <script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
         </div>
+    </div>-->
+    <div class="container">
+        <br>
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <!--<ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>-->
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="../imgs/flora/1.jpg" alt="Flower" width="460" height="345">
+                </div>
+
+                <div class="item" ng-repeat="i in getNumber(number) track by $index">
+                    <img ng-src="../imgs/flora/{{$index+2}}.jpg" alt="Flower" width="460" height="345">
+                </div>
+
+            </div>
+
+            <!-- Left and right controls -->
+            <button class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </button>
+            <button class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </button>
+        </div>
+        <a href="https://www.flickr.com/photos/rujoota/" target="_blank" class="btn btn-xl pull-right">View more &rarr;</a>
     </div>
+
 </section>

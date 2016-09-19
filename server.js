@@ -41,13 +41,13 @@ app.get('/allProjects',function(req, res){
     });*/
     return res.json([
     {
-        "img": "../imgs/projects/os.jpg",
+        "img": "../imgs/projects/os.png",
         "name": "System programming",
         "order": 3,
         "desc": "Operating system and network programming in C"
     },
     {
-        "img": "../imgs/projects/website.jpg",
+        "img": "../imgs/projects/website.png",
         "name": "Web Development",
         "order": 2,
         "desc": "5 years of experience as full-stack web developer"
@@ -55,17 +55,17 @@ app.get('/allProjects',function(req, res){
     {
         "name": "Game development",
         "order": 4,
-        "img": "../imgs/projects/game.jpg",
+        "img": "../imgs/projects/game.png",
         "desc": "Desktop and online multiplayer games with Game Server"
     },
     {
-        "img": "../imgs/projects/mobile.jpg",
+        "img": "../imgs/projects/mobile.png",
         "name": "Mobile App Development",
         "order": 1,
         "desc": "Development experience in both Android and iOS(swift)"
     },
     {
-        "img": "../imgs/projects/server.jpg",
+        "img": "../imgs/projects/server.png",
         "name": "Server development",
         "order": 5,
         "desc": "Worked on creating web-server and game-server"

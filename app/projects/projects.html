@@ -1,30 +1,4 @@
 <!-- Portfolio Grid Section -->
-<!--<section id="projects" class="bg-light-gray" ng-controller="ProjectCtrl">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <h2 class="section-heading">My Projects</h2>
-                <h3 class="section-subheading text-muted">Collection of my work</h3>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 col-sm-6 portfolio-item" ng-repeat="project in projects | orderBy : 'order'">
-                <a href="#" class="portfolio-link" data-toggle="modal" data-target="#portfolioModal{{project.order}}">
-                    <div class="portfolio-hover">
-                        <div class="portfolio-hover-content">
-                            <i class="fa fa-plus fa-3x"></i>
-                        </div>
-                        <img ng-src="{{project.img}}" class="img-responsive" alt="">
-                    </div>
-                </a>
-                <div class="portfolio-caption">
-                    <h4>{{project.name}}</h4>
-                    <p class="text-muted">{{project.desc}}</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>-->
 <section id="projects" class="bg-light-gray">
     <div class="container">
         <div class="row">
@@ -33,7 +7,7 @@
                 <h3 class="section-subheading text-muted">Collection of my work</h3>
             </div>
         </div>
-        <div class="row" >
+        <div class="row">
             <div class="col-md-4 col-sm-6 portfolio-item" ng-repeat="project in projects | orderBy : 'order'">
                 <a href="" class="portfolio-link" data-toggle="modal" data-target="#portfolioModal{{project.order}}">
                     <div class="portfolio-hover">
@@ -69,8 +43,10 @@
                             <div id="project1-details">
                                 <div class="modal-header project-center">
                                     <h2>Attendance App</h2>
-                                    <p class="item-intro text-muted">Mobile app for taking attendance, built in
-                                        Android</p>
+                                    <p class="item-intro text-muted">Android App for taking attendance</p>
+                                    <a href="https://play.google.com/store/apps/details?id=att.attendanceapp"
+                                       target="_blank">Google Playstore link</a>
+                                    | <a href="https://github.com/rujoota/Attendance">Github project</a>
                                 </div>
                                 <img class="img-responsive img-centered" src="../imgs/projects/proj_attendance.png"
                                      alt="">
@@ -137,6 +113,7 @@
                                 <div class="modal-header project-center">
                                     <h2>SuperCaly</h2>
                                     <p class="item-intro text-muted">iOS smart calendar app</p>
+                                    <a href="https://bitbucket.org/rujoota/supercalyios/wiki/Home">Bitbucket Project</a>
                                 </div>
                                 <img class="img-responsive img-centered" src="../imgs/projects/proj_supercaly.png"
                                      alt="">
@@ -165,6 +142,8 @@
                                 <div class="modal-header project-center">
                                     <h2>Medicine selling app</h2>
                                     <p class="item-intro text-muted">built in Android</p>
+                                    <a href="https://github.com/rujoota/Inviks1">Github project</a>
+                                    | <a href="https://github.com/jethvarajan/Healthkart">REST APIs</a>
                                 </div>
 
                                 <p>
@@ -243,6 +222,8 @@
                                 <div class="modal-header project-center">
                                     <h2>Table for You</h2>
                                     <p class="item-intro text-muted">Restaurant reservation system</p>
+                                    <a href="https://drive.google.com/file/d/0ByNL4eD4rWkhVVNCWllzZEZIOUk/view">Detailed
+                                        project report</a>
                                 </div>
                                 <img class="img-responsive img-centered" src="../imgs/projects/proj_tableforyou.png"
                                      alt="">
@@ -301,15 +282,19 @@
                                 <div class="modal-header project-center">
                                     <h2>My Portfolio Website</h2>
                                     <p class="item-intro text-muted">built in AngularJS</p>
+                                    <a href="https://github.com/rujoota/MySite">Github Project</a>
                                 </div>
 
                                 <p>
                                     Its the current website which you are browsing!
                                 <p>
-                                    Its developed using AngularJS, bootstrap, html, javascript, jQuery
+                                    Its developed using AngularJS, bootstrap, html, javascript, jQuery and node
                                 <p>
                                     Its fully deployed using Amazon Web Services(AWS). Main website is deployed on EC2
                                     instance with auto-scaling enabled.
+                                <p>In background, it runs basic node server with express which handles basic
+                                    request-response features.</p>
+                                <p>The site is fully mobile-responsive</p>
                                 <p> Checkout the <a href="https://github.com/rujoota/MySite" target="_blank">github
                                     link</a> for this project.
 
@@ -427,6 +412,8 @@
                                 <div class="modal-header project-center">
                                     <h2>Cards of Wild</h2>
                                     <h3 class="section-subheading text-muted">Multiplayer online card game</h3>
+                                    <a href="https://github.com/worldofbalance/wiki/wiki/15.-Cards-of-Wild">Github
+                                        Wiki</a>
                                 </div>
                                 <br>
                                 <div class="project-center embed-responsive embed-responsive-16by9">
@@ -470,17 +457,20 @@
                             <div id="savingthecity-details">
                                 <div class="modal-header project-center">
                                     <h2>Saving the city</h2>
-                                    <a href="https://savingthecity.herokuapp.com">Visit website to play</a>
+                                    <a href="https://savingthecity.herokuapp.com">Visit website to play</a> | <a
+                                        href="https://github.com/rujoota/Savingthecity">Github project</a>
                                 </div>
                                 <img class="img-responsive img-centered" src="../imgs/projects/proj_savingthecity.png"
                                      alt="">
                                 <p>
 
-                                    This is a 2D shooting game project built in Ruby on Rails where villains trying to attack the city and
+                                    This is a 2D shooting game project built in Ruby on Rails where villains trying to
+                                    attack the city and
                                     players aka superheros tries to save the city by killing them.
 
-                                    Its 2 player multiplayer game which utilizes following HTML 5 canvas, Pusher gem for live updates and Facebook integration via omniauth-facebook gem.
-                                    <p><a href="https://github.com/rujoota/MySite">Github project</a></p>
+                                    Its 2 player multiplayer game which utilizes following HTML 5 canvas, Pusher gem for
+                                    live updates and Facebook integration via omniauth-facebook gem.
+                                <p><a href="https://github.com/rujoota/Savingthecity">Github project</a></p>
                             </div>
 
                             <div id="tankwars-details">
@@ -490,12 +480,16 @@
                                 </div>
                                 <br>
                                 <div class="project-center embed-responsive embed-responsive-16by9">
-                                    <iframe width="660" height="415" src="https://www.youtube.com/embed/qxXcB4P5XT8" frameborder="0" allowfullscreen></iframe>
+                                    <iframe width="660" height="415" src="https://www.youtube.com/embed/qxXcB4P5XT8"
+                                            frameborder="0" allowfullscreen></iframe>
                                 </div>
                                 <br>
                                 <p>
 
-                                    This is two player game. The players (tanks) fight against each other to kill each other by bullets. Bullets decrease opponent’s powers and at the end kills it. Tanks initially are far from each other and by looking in minimap, they need to reach other tank crossing hurdles of simple walls.
+                                    This is two player game. The players (tanks) fight against each other to kill each
+                                    other by bullets. Bullets decrease opponent’s powers and at the end kills it. Tanks
+                                    initially are far from each other and by looking in minimap, they need to reach
+                                    other tank crossing hurdles of simple walls.
 
                             </div>
 
@@ -506,11 +500,17 @@
                                 </div>
                                 <br>
                                 <div class="project-center embed-responsive embed-responsive-16by9">
-                                    <iframe width="660" height="415" src="https://www.youtube.com/embed/sUo97P2LKBY" frameborder="0" allowfullscreen></iframe>
+                                    <iframe width="660" height="415" src="https://www.youtube.com/embed/sUo97P2LKBY"
+                                            frameborder="0" allowfullscreen></iframe>
                                 </div>
                                 <br>
                                 <p>
-                                    This is one player game. That player is combined of two elements (called Pop and Katch). Pop bounces around and destroys the enemies and Katch directs Pop in which direction to go and provides protection. The player needs to control Katch by using left and right arrows so that it can save Pop and direct it in proper direction in such a way that Pop collides with enemy and destroys them. The game is over when either player’s health is over or main enemy BigLeg is destroyed.
+                                    This is one player game. That player is combined of two elements (called Pop and
+                                    Katch). Pop bounces around and destroys the enemies and Katch directs Pop in which
+                                    direction to go and provides protection. The player needs to control Katch by using
+                                    left and right arrows so that it can save Pop and direct it in proper direction in
+                                    such a way that Pop collides with enemy and destroys them. The game is over when
+                                    either player’s health is over or main enemy BigLeg is destroyed.
                             </div>
 
                         </div>
@@ -546,10 +546,95 @@
 
                                 </div>
                                 <p>
-                                    The web server is developed in Ruby. It can handle different kinds of requests and respond to browsers.
-                                    Its fully covers document finding and loading cycle. It supports GET, PUT, DELETE and HEAD methods.
-                                    It also supports 200, 204, 304, 404 etc most common responses.
-                                    The server also supports various mime-types and configurable with htaccess file. It can perform basic authentication workflow.
+                                    The purpose of this project is to write a web server application capable of a subset
+                                    of the HyperText Transfer Protocol.
+                                    This was a two person team project.
+
+                                    The web server is developed in Ruby. It can handle different kinds of requests and
+                                    respond to browsers.
+                                    Its fully covers document finding and loading cycle.
+                                    The server also supports various mime-types and configurable with htaccess file. It
+                                    can perform basic authentication workflow.
+
+                                <p>
+                                    Generally, this project was divided into the following milestones:
+                                    <ul>
+                                        <li>
+                                            Read standard configuration files for use in responding to client requests:
+                                            <p>Web Servers typically read in a number of configuration files that define the
+                                                behavior of the server, as well as the types of
+                                                requests that the server can respond to.
+                                                My web server read two common file formats (the files have been copied from an
+                                                Apache Web Server application): httpd.conf and mime.types.
+                                            </p>
+                                            </li>
+                                            <li>
+                                                Parse HTTP Requests
+                                                <p>
+                                                    My server appropriately responded to the following request methods: GET, HEAD, POST, and PUT.
+                                                </p>
+                                            </li>
+                                            <li>
+                                                Generate and send HTTP Responses
+                                                <p>
+                                                    Server was be able to generate all of the following response codes:
+                                                    200,201,400,401,403,404,500.
+                                                    The Date and Server headers was returned in every response.
+                                                    Additional headers was returned according to the protocol for each of the possible responses
+                                                    (including  Content-Type and Content-Length).
+                                                </p>
+                                            </li>
+                                            <li>
+                                                Respond to Multiple Requests Simultaneously
+                                                <p>The server would run a separate thread for each requests.</p>
+                                            </li>
+                                            <li>
+                                                Execute Server Scripts
+                                                <p>
+                                                    Server was able to execute resources that have been requested in a ScriptAlias’ed directory.
+                                                    Ruby’s IO.popen method was used to execute script files, and obtain the results.
+
+                                                </p>
+                                            </li>
+                                            <li>
+                                                Support Simple Authentication
+                                                <p>
+                                                    Server was able to handle the 401/403 authentication workflow.
+                                                    Permission to access a given resource was determined by the presence of the file
+                                                    specified by the AccessFileName directive in the httpd.conf file
+                                                    anywhere in the directory tree of the requested resource.
+                                                    This file contained directives in key value pairs that specify authentication
+                                                    information for a given set of resources.
+                                                </p>
+                                            </li>
+
+                                    </ul>
+
+                            </div>
+
+                            <div id="gameserver-details">
+                                <div class="modal-header project-center">
+                                    <h2>Game Server</h2>
+                                    <p class="item-intro text-muted">For Cards of Wild game</p>
+                                    <a href="https://github.com/worldofbalance/wob-server">Github project</a>
+                                </div>
+                                <p>
+                                    This was done as part of developing cards of wild game.
+                                    <p>The main Game Server is created in Java to handle requests and responses from client.
+                                Server is used for login, update information from database to client, check if the client is alive by heartbeat requests and
+                                update opponents in case of multiplayer gaming environment.
+                                Most of the game is using their own independent servers to manage requests specific to their game and to ease load on
+                                main/lobby server.
+                                  <p>  COW(Cards of Wild) server is independent from main game's lobby server.
+                                    The first request that comes to COW server only after player joins the room or match.
+                                Server receives user requests to create match for 2 players and let them join it.
+                                Sometimes due to slow connection, it takes sometime for users to join the match, in that case,
+                                slower clients keeps on pinging the server to let it join appropriate match.
+                                Match only starts after both clients have joined and got their deck of cards.
+                                <p>For detailed Architecture of server <a href="https://github.com/worldofbalance/wiki/wiki/15.-Cards-of-Wild#server">visit here</a></p>
+
+
+
                             </div>
 
                         </div>

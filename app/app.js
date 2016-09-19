@@ -10,7 +10,7 @@ angular.module('myApp', [
   'myApp.version'
 ]).
     config(function($stateProvider,$urlRouterProvider){
-      //$urlRouterProvider.otherwise("");
+      $urlRouterProvider.otherwise("");
       $stateProvider.state("index", {
             url: "",
             views: {
@@ -33,7 +33,12 @@ angular.module('myApp', [
                 templateUrl: 'photos/photos.html',
                 controller: "PhotosCtrl",
                 controllerAs: "PhotosCtrl"
-              }
+              },
+                'contact': {
+                    templateUrl: 'contact/contact.html',
+                    controller: "ContactCtrl",
+                    controllerAs: "ContactCtrl"
+                }
             }
           }
       );
@@ -55,6 +60,9 @@ angular.module('myApp', [
         $scope.getNumber = function(num) {
             return new Array(num);
         }
+    })
+    .controller('ContactCtrl', function($scope,$http) {
+
     });
 /*config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   //$locationProvider.hashPrefix('!');

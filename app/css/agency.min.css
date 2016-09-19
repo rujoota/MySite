@@ -297,7 +297,7 @@ section h3.section-subheading {
 }
 @media (min-width: 768px) {
 	section {
-		padding: 150px 0;
+		/*padding: 150px 0;*/
 	}
 }
 .service-heading {
@@ -555,7 +555,7 @@ section h3.section-subheading {
 aside.clients img {
 	margin: 50px auto;
 }
-section#contact {
+/*section#contact {
 	background-color: #222222;
 	background-image: url('//s3-us-west-2.amazonaws.com/mysite-bucket/imgs/map-image.png');
 	background-position: center;
@@ -563,7 +563,7 @@ section#contact {
 }
 section#contact .section-heading {
 	color: white;
-}
+}*/
 section#contact .form-group {
 	margin-bottom: 25px;
 }

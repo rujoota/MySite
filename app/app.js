@@ -53,7 +53,9 @@ angular.module('myApp', [
 
     })
     .controller('BlogCtrl', function($scope,$http) {
-
+        $http.get( "allBlogs").success(function( data ) {
+            $scope.blogs=data;
+        });
     })
     .controller('PhotosCtrl', function($scope) {
         $scope.number = 20;

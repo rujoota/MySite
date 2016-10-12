@@ -6,7 +6,7 @@ var path = require('path');
 var favicon = require('serve-favicon');
 var morgan = require('morgan'); // formerly express.logger
 var errorhandler = require('errorhandler');
-/*const DynamoStore=require('./data/dynamoStore');*/
+const DynamoStore=require('./data/dynamoStore');
 var app = express();
 
 // all environments
@@ -29,6 +29,18 @@ if ('development' === app.get('env')) {
 //require('./data/projects.js').initProjects();
 /*var ProjectObj=require('./data/projects.js');*/
 
+app.get('/allBlogs',function(req, res){
+        DynamoStore.getAllItems("Blogs",function (err,data) {
+         if (err) {
+            console.error("Unable to scan the table. Error JSON:", JSON.stringify(err, null, 2));
+         }
+         else {
+         // print all the projects
+            console.log("Scan succeeded.Data returned:"+JSON.stringify(data.Items));
+            return res.json(data.Items);
+         }
+    });
+});
 app.get('/allProjects',function(req, res){
     /*DynamoStore.getAllItems("Projects",function (err,data) {
         if (err) {

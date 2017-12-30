@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-   - source: /
-     destination: ~
+   - source: MySite
+     destination: ~/MySite
 hooks:
    AfterInstall:
     - location: scripts/afterinstall.sh

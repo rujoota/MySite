@@ -1,5 +1,5 @@
 #change directory
-cd MySite
+cd /home/ec2-user/MySite
 chown -R ec2-user:ec2-user .
 chmod -R 755 .
 

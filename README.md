@@ -12,3 +12,4 @@ It utilizes following amazon web services:
  * S3 - for static file uploads
  * Load balancer
  * Auto scaling - to manage traffic
+ * AWS Code Deploy  - For automatic deployment when new commit added to master branch

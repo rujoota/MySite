@@ -22,3 +22,6 @@ yum -y install git
 
 #Go to user home directory
 cd /home/ec2-user/
+
+#Create MySite directory
+mkdir MySite

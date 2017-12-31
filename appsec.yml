@@ -1,8 +1,8 @@
 version: 0.0
 os: linux
 files:
-   - source: MySite
-     destination: /home/ec2-user/MySite
+   - source: /
+     destination: /home/ec2-user
 hooks:
    AfterInstall:
     - location: scripts/afterinstall.sh
